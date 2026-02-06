@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ロト公式デモ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    .container {
+      padding: 12px;
+      padding-bottom: 80px;
+    }
+
+    .lotto-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .lotto-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .lotto-logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .jackpot {
+      background: linear-gradient(135deg, #fff3b0, #ffd24d);
+      padding: 6px 10px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .jackpot strong {
+      color: #d60000;
+      font-size: 20px;
+    }
+
+    .draw-info {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    .deadline {
+      margin-top: 4px;
+      font-size: 13px;
+      color: #ff6600;
+    }
+
+    .actions {
+      display: flex;
+      margin-top: 10px;
+      gap: 10px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 10px 0;
+      border-radius: 6px;
+      font-size: 14px;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .btn.gray {
+      background: #e0e0e0;
+      color: #333;
+    }
+
+    .btn.red {
+      background: #e60012;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* bottom nav */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: #ffffff;
+      border-top: 1px solid #ddd;
+      display: flex;
+    }
+
+    .nav-item {
+      flex: 1;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+      padding-top: 6px;
+    }
+
+    .nav-item.active {
+      color: #e60012;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- LOTO 7 -->
+    <div class="lotto-card">
+      <div class="lotto-header">
+        <div class="lotto-logo">LOTO 7</div>
+        <div class="jackpot">
+          1等最高<br>
+          <strong>12億円</strong><br>
+          <small>※キャリーオーバー発生時</small>
+        </div>
+      </div>
+      <div class="draw-info">毎週 金曜日 抽せん</div>
+      <div class="deadline">抽せん日当日の18:20まで</div>
+      <div class="actions">
+        <div class="btn gray">商品概要</div>
+        <div class="btn red">ネット購入</div>
+      </div>
+    </div>
+
+    <!-- LOTO 6 -->
+    <div class="lotto-card">
+      <div class="lotto-header">
+        <div class="lotto-logo">LOTO 6</div>
+        <div class="jackpot">
+          1等最高<br>
+          <strong>6億円</strong><br>
+          <small>※キャリーオーバー発生時</small>
+        </div>
+      </div>
+      <div class="draw-info">毎週 月・木曜日 抽せん</div>
+      <div class="deadline">抽せん日当日の18:20まで</div>
+      <div class="actions">
+        <div class="btn gray">商品概要</div>
+        <div class="btn red">ネット購入</div>
+      </div>
+    </div>
+
+    <!-- MINI LOTO -->
+    <div class="lotto-card">
+      <div class="lotto-header">
+        <div class="lotto-logo">MINI LOTO</div>
+        <div class="jackpot">
+          1等最高<br>
+          <strong>1,000万円</strong>
+        </div>
+      </div>
+      <div class="draw-info">毎週 火曜日 抽せん</div>
+      <div class="deadline">抽せん日当日の18:20まで</div>
+      <div class="actions">
+        <div class="btn gray">商品概要</div>
+        <div class="btn red">ネット購入</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- bottom navigation -->
+  <div class="bottom-nav">
+    <div class="nav-item active">ホーム</div>
+    <div class="nav-item">抽せん結果</div>
+    <div class="nav-item">マイページ</div>
+  </div>
+
+</body>
+</html>
